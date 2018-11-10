@@ -1,0 +1,199 @@
+<html class=" js" lang="en"><head>
+    <meta charset="utf-8">
+    <title>Accueil Lightning</title>
+
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="commande.css">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/mYtdJEb.png" />
+
+
+</head>
+
+
+<body>
+        
+    <header id="header" role="banner" class="main-header">
+        
+        <div class="header-inner">
+            <div class="defile">
+                    <h1>Light'Bot</h1>
+            </div>
+
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="commande.html">Commandes</a></li>
+                    <li><a href="partenaire.html">Partenaire</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">➕ Plus</a>
+                            <div class="dropdown-content">
+                                    <a href="https://discord.gg/PrpAx8" hreflang="fr">Serveur Officiel du bot</a>
+                              <a href="#">A propos</a>
+                            </div>
+                </ul>
+            </nav>
+    </header>
+
+    <section id="section" class="main-section first-section">
+        <div class="container">
+            <p class="bigtxt txtcenter">Lightning, bot discord hors du commun</p>
+        </div>
+    </section>
+    <header id="header1" role="banner" class="main-header1">
+        
+    
+
+            <nav class="header-nav1">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="commande.html">Commandes</a></li>
+                    <li><a href="partenaire.html">Partenaire</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">➕ Plus</a>
+                            <div class="dropdown-content">
+                                    <a href="https://discord.gg/PrpAx8" hreflang="fr">Serveur Officiel du bot</a>
+                              <a href="#">A propos</a>
+                            </div>
+                </ul>
+            </nav>
+    </header>
+    
+
+
+    <section id="main" class="main-section cleanbg">
+        <div class="container">
+            <h1>Site officiel du bot "Lightning".</h1>
+
+            <p>Site conçu pour le bot de Activity développeur JS/HTML.</p>
+
+            <p>Partenaire avec plusieurs serveurs Discord, le bot a une communauté d'environ 600 utilisateurs.</p>
+
+            <h2>L'utilité de Lightning.</h2>
+
+            <p>Lightning, un bot multitaches, qui permet de satisfaire un pubic avec une exigeance particulière.</p>
+
+            <p>Le bot est développer par un utilisateur discord, actuellement fondateur d'un serveur Discord qui permet l'apprentissage au développement de plusieurs types de langages.</p>
+
+
+        </div>
+    </section>
+
+    
+
+    <footer class="main-footer">
+        <div class="container">
+            <p class="txtcenter">
+                <a href="accueil2.html" hreflang="fr">Retour à l'acceuil</a> <span>–</span>
+                <a href="accueil2.html" hreflang="fr" lang="fr">Retour en haut de l'article.</a>
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script>
+
+
+(function() {
+var lastTime = 0;
+var vendors = ['ms', 'moz', 'webkit', 'o'];
+for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+    window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+    window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+}
+
+if ( ! window.requestAnimationFrame ) {
+    window.requestAnimationFrame = function(callback, element) {
+        var currTime = new Date().getTime();
+        var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+        var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+        timeToCall);
+        lastTime = currTime + timeToCall;
+        return id;
+    };
+}
+
+if ( ! window.cancelAnimationFrame ) {
+    window.cancelAnimationFrame = function(id) {
+        clearTimeout(id);
+    };
+}
+}());
+
+
+/*
+Sticky menu script
+*/
+
+(function(w,d,undefined){
+var el_html = d.documentElement,
+    el_body = d.getElementsByTagName('body')[0],
+    header = d.getElementById('header'),
+    menuIsStuck = function(triggerElement) {
+        var _scrollTop	= w.pageYOffset || el_body.scrollTop,
+            regexp		= /(nav\-is\-stuck)/i,
+            classFound	= el_html.className.match( regexp ),
+            navHeight	= header.offsetHeight,
+            bodyRect	= el_body.getBoundingClientRect(),
+            scrollValue	= triggerElement ? triggerElement.getBoundingClientRect().top - bodyRect.top - navHeight  : 800,
+            scrollValFix = classFound ? scrollValue : scrollValue + navHeight;
+
+        // if scroll down is 700 or more and nav-is-stuck class doesn't exist
+        if ( _scrollTop > scrollValFix && !classFound ) {
+            el_html.className = el_html.className + ' nav-is-stuck';
+            el_body.style.paddingTop = navHeight + 'px';
+        }
+
+        // if we are to high in the page and nav-is-stuck class exists
+        if ( _scrollTop <= 2 && classFound ) {
+            el_html.className = el_html.className.replace( regexp, '' );
+            el_body.style.paddingTop = '0px';
+        }
+    },
+    onScrolling = function() {
+        // this function fires menuIsStuck()…
+        menuIsStuck( d.getElementById('main') );
+        // and could do more stuff below
+    };
+
+
+el_html.className = el_html.className + ' js';
+
+// when you scroll, fire onScrolling() function
+w.addEventListener('scroll', function(){
+    w.requestAnimationFrame( onScrolling );
+});
+
+
+}(window, document));
+
+    
+    
+    
+
+
+
+    /*
+         * WARNING
+         *
+         * 
+        * DON'T COPY BELOW
+        *
+        *
+        * WARNING
+     */
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-8397602-5']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_setDomainName', '.Lightning.fr']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+
+</body></html>
