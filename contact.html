@@ -7,7 +7,7 @@
      <link rel="stylesheet" href="contacti.css">
     <link rel="icon" type="image/png" href="https://i.imgur.com/mYtdJEb.png" />
 
-
+    <script src='https://www.google.com/recaptcha/api.js'  async defer></script>
 </head>
 
 
@@ -65,6 +65,7 @@
                 <label for="message" style="float: left;">Message</label>
                 <textarea id="message" name="message" placeholder="Dis nous ce que tu as à nous dire !" style="height:200px" required></textarea><br>
       
+                <div class="g-recaptcha" data-sitekey="6LcR53kUAAAAALvJONUo3l8rqMn0iZ9Gmmijlw36"></div>
                 <input type="submit" value="Envoyer" id="btn-validate">
               </form>
             
